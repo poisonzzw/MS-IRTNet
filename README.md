@@ -11,8 +11,11 @@ The MFNet datesets for RGB-T semantic segmentation could be found in [位置]。
 Predict maps: 
 
 # train
+Pretrain weights download：
 
-Pretrained model download：
+Download the pretrained ConvNext V2 - tiny here [pretrained segformer].
+
+
 
 # test 
 
