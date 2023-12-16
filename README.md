@@ -13,7 +13,7 @@ Predict maps:
 # train
 Pretrain weights download：
 
-Download the pretrained ConvNext V2 - tiny here [pretrained segformer].
+Download the pretrained ConvNext V2 - tiny here [pretrained ConvNext V2](https://dl.fbaipublicfiles.com/convnext/convnextv2/im22k/convnextv2_tiny_22k_384_ema.pt).
 
 
 
