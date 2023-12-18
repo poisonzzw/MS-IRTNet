@@ -5,7 +5,7 @@ The code of paper 'MS-IRTNet: Multi-Stage Information Interaction Network for RG
 CUDA 11.2，torchvision 0.13.1，Tensorboard 2.9.0，Python 3.9，PyTorch 1.12.1。
 
 # Dataset
-The MFNet datesets for RGB-T semantic segmentation could be found in [位置](https://www.mi.t.u-tokyo.ac.jp/static/projects/mil_multispectral/)。
+The MFNet datesets for RGB-T semantic segmentation could be found in [here](https://www.mi.t.u-tokyo.ac.jp/static/projects/mil_multispectral/)。
 
 # Result
 Predict maps: [百度网盘](https://pan.baidu.com/s/1T4J-iTgW7nBZWcCTmNsIBQ).
