@@ -8,7 +8,7 @@ CUDA 11.2，torchvision 0.13.1，Tensorboard 2.9.0，Python 3.9，PyTorch 1.12.1
 The MFNet datesets for RGB-T semantic segmentation could be found in [位置]。
 
 # Result
-Predict maps: 
+Predict maps: [百度网盘](https://pan.baidu.com/s/1T4J-iTgW7nBZWcCTmNsIBQ），提取码rd60。
 
 # train
 Pretrain weights download：
