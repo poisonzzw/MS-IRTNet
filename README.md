@@ -2,7 +2,7 @@
 The code of paper 'MS-IRTNet: Multi-Stage Information Interaction Network for RGB-T Semantic Segmentation'. The code and pre-trained models will be released after the paper is published.
 
 # Requirements
-CUDA 11.2，torchvision 0.13.1，Tensorboard 2.9.0，Python 3.9，[PyTorch 1.12.1](https://github.com/huaaaliu/RGBX_Semantic_Segmentation/tree/main)。
+CUDA 11.2，torchvision 0.13.1，Tensorboard 2.9.0，Python 3.9，PyTorch 1.12.1。
 
 # Dataset
 The MFNet datesets for RGB-T semantic segmentation could be found in [位置]。
