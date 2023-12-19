@@ -49,7 +49,7 @@ class Test(object):
         # Data
         data = TESTData(image_path_a, image_path_b, lable_path)
 
-        # data = TEST_visualData(image_path_a, image_path_b, lable_path)
+        
         # Data_Loader
         test_data = DataLoader(dataset=data, batch_size=1)
 
