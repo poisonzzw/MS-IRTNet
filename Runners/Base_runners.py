@@ -59,6 +59,7 @@ class BaseRunner(object):
     def build_model(self, LOGS):
 
         from Convnextv2.builder import Convnextv2
+        # MS-IRTNet
         netG= Convnextv2(in_chans=3, num_classes=9, depths=[3, 3, 9, 3], dims=[96, 192, 384, 768]).to(self.FLAGS['System_Parameters']['device'])
 
         print('-' * 35)
