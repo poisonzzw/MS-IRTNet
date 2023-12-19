@@ -1,0 +1,34 @@
+System_Parameters:
+  is_debug: 'False'
+  device: 'cuda:0'
+  use_pretrained_model: 'False'
+  Val_while_train: 'True'
+  Test_while_train: 'False'
+  num_workers: 4
+  test: 'False'
+Root:
+  data_dictionary_train: 'D:/Data'
+  data_dictionary_val: 'D:/Data'
+  checkpoint_root: './Checkpoint'
+  save_data: E:/2D_Test_house
+  log_path: []
+Data:
+  data_type: 'train'
+  shape: [480, 640]
+  down_sample_ratio: 4
+  split_sequences:
+    train: ["train"]
+    valid: ["test"]  #, 'new'
+  data_end:
+    ir: _th
+    vis: _rgb
+    label:
+Train:
+  train_batch_size: 4
+  val_batch_size: 1
+  test_while_train_batch_size: 1
+  test_batch_size: 1
+  epoch: 300
+  learning_rate: 0.01
+  decay_rate: 0.5
+  decay_step: 80
