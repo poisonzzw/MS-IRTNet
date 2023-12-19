@@ -55,24 +55,10 @@ class Test(object):
 
         # BUILD Model
 
-
         model = torch.load('checkpoint/model.pth').to(self.FLAGS['System_Parameters']['device'])
        
         print("开始加载预训练模型了哦！")
-
-        # pretrain_dict = torch.load('checkpoint/Model_statedict.pth', map_location='cpu')
-        # model = Convnextv2(in_chans=3, num_classes=9, depths=[3, 3, 9, 3], dims=[96, 192, 384, 768]).to(self.FLAGS['System_Parameters']['device'])
-        # model_dict = {}
-        # mstate_dict = model.state_dict()
-        # for k, v in pretrain_dict['state_dict'].items():
-        #     if k in mstate_dict:
-        #         model_dict[k] = v
-        #         print(k)
-        # mstate_dict.update(model_dict)
-        # model.load_state_dict(mstate_dict)
-
-
-
+        
         metric = SegEvaluator(9, self.FLAGS)
 
         print(len(test_data))
@@ -99,8 +85,6 @@ class Test(object):
 
     def fuse(self):
         image_path_a, image_path_b, lable_path = testpath()
-
-        # image_path_a, image_path_b, lable_path = test_visualpath()
 
         self.test_val(image_path_a, image_path_b, lable_path)
 
