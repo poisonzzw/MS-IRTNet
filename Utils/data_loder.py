@@ -14,13 +14,13 @@ class TESTData(Dataset):
         super(TESTData, self).__init__()
 
         self.file_path_a = file_path_a
-        self.image_path_a = os.listdir('D:/zzw/zzw-seg-dataset/RTFNet-data/test-data/ir')
+        self.image_path_a = os.listdir('D:/test-data/ir')
 
         self.file_path_b = file_path_b
-        self.image_path_b = os.listdir('D:/zzw/zzw-seg-dataset/RTFNet-data/test-data/vis')
+        self.image_path_b = os.listdir('D:/test-data/vis')
 
         self.file_path_label = file_path_label
-        self.image_path_label = os.listdir('D:/zzw/zzw-seg-dataset/RTFNet-data/test-data/label')
+        self.image_path_label = os.listdir('D:/test-data/label')
 
 
 
@@ -72,8 +72,8 @@ class TESTData(Dataset):
 
 def testpath():
 
-    image_ir_path = 'D:/zzw/zzw-seg-dataset/RTFNet-data/test-data/ir/'
-    image_vis_path = 'D:/zzw/zzw-seg-dataset/RTFNet-data/test-data/vis/'
-    image_label_path = 'D:/zzw/zzw-seg-dataset/RTFNet-data/test-data/label/'
+    image_ir_path = 'D:/test-data/ir/'
+    image_vis_path = 'D:/test-data/vis/'
+    image_label_path = 'D:/test-data/label/'
     return image_ir_path, image_vis_path, image_label_path
 
