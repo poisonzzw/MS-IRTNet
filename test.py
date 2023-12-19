@@ -25,11 +25,11 @@ def get_palette():
 
 def visualize(image_name, predictions):
     palette = get_palette()
-    outpath = 'D:/zzw/zzw-seg-dataset/RTFNet-data/test-visual/outpath1/'
+    outpath = 'D:/'
     for (i, pred) in enumerate(predictions):
         pred = predictions[i].cpu().numpy()
         img = np.zeros((pred.shape[0], pred.shape[1], 3), dtype=np.uint8)
-        for cid in range(0, len(palette)): # fix the mistake from the MFNet code on Dec.27, 2019
+        for cid in range(0, len(palette)): 
             img[pred == cid] = palette[cid]
         img = Image.fromarray(np.uint8(img))
         img.save(outpath + str(image_name)[2:8] + '.png')
@@ -56,23 +56,11 @@ class Test(object):
         # BUILD Model
 
 
-        model = torch.load('D:/ZZW/try-CMX/tiny_segnext/Checkpoint/BEST60.5-2023y03m17d-09h24m/checkpoint/model.pth').to(self.FLAGS['System_Parameters']['device'])
-        # model = torch.load(
-        #     'D:/ZZW/try-CMX/tiny_segnext/Checkpoint/react-2023y03m26d-09h43m/checkpoint/model.pth').to(
-        #     self.FLAGS['System_Parameters']['device'])
-
-        # model = torch.load(
-        #     'D:/ZZW/try-CMX/tiny_segnext/Checkpoint/59.91-2023y03m15d-22h58m/checkpoint/model.pth').to(
-        #     self.FLAGS['System_Parameters']['device'])
-
-        # model = torch.load('D:/ZZW/zzw-seg-dataset/RTFNet-data/test-visual/model/CMX-B2.pth').to(self.FLAGS['System_Parameters']['device'])
-
+        model = torch.load('checkpoint/model.pth').to(self.FLAGS['System_Parameters']['device'])
+       
         print("开始加载预训练模型了哦！")
 
-
-
-
-        # pretrain_dict = torch.load('D:/ZZW/try-CMX/tiny_segnext/Checkpoint/BEST60.5-2023y03m17d-09h24m/checkpoint/Model_statedict.pth', map_location='cpu')
+        # pretrain_dict = torch.load('checkpoint/Model_statedict.pth', map_location='cpu')
         # model = Convnextv2(in_chans=3, num_classes=9, depths=[3, 3, 9, 3], dims=[96, 192, 384, 768]).to(self.FLAGS['System_Parameters']['device'])
         # model_dict = {}
         # mstate_dict = model.state_dict()
