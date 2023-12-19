@@ -28,15 +28,14 @@ Predict maps: [百度网盘](https://pan.baidu.com/s/1T4J-iTgW7nBZWcCTmNsIBQ).
 提取码rd60。
 
 # train
-Pretrain weights download：[百度网盘](https://pan.baidu.com/s/1jhBzhxnfD2_oOhnnTF0zCQ).
-提取码zk9s。
-
 Download the pretrained ConvNext V2 - tiny here [pretrained ConvNext V2](https://dl.fbaipublicfiles.com/convnext/convnextv2/im22k/convnextv2_tiny_22k_384_ema.pt).
 
 
 
 # test 
-
+在Train.py文件中注释train代码部分，运行test部分，导入保存的整体模型即可。
+Model weights download：[百度网盘](https://pan.baidu.com/s/1jhBzhxnfD2_oOhnnTF0zCQ).
+提取码zk9s。
 
 
 
