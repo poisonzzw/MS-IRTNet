@@ -22,6 +22,7 @@ CUDA 11.2，torchvision 0.13.1，Tensorboard 2.9.0，Python 3.9，PyTorch 1.12.1
 
 # Dataset
 The MFNet datesets for RGB-T semantic segmentation could be found in [here](https://www.mi.t.u-tokyo.ac.jp/static/projects/mil_multispectral/)。
+The Data.Dataloader_voxel file consists of two parts: data import and data augmentation, which can be written by the reader. Since the research group currently has a paper under review, if it is accepted, we will upload the file immediately.
 
 # Result
 Predict maps: [百度网盘](https://pan.baidu.com/s/1T4J-iTgW7nBZWcCTmNsIBQ).
